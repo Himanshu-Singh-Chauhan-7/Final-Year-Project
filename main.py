@@ -10,7 +10,7 @@ import mysql.connector
 # MY db connection
 local_server= True
 app = Flask(__name__)
-app.secret_key='medhAVI'
+app.secret_key='28a65c6b86e51c91ce7113408f40ae72b054b2b1afe5fd1a3be914f721cabb37'
 
 
 # this is for getting unique user access
@@ -61,7 +61,7 @@ class User(UserMixin,db.Model):
 class Register(db.Model):
     rid=db.Column(db.Integer,primary_key=True)
     farmername=db.Column(db.String(50))
-    adharnumber=db.Column(db.String(50))
+    aadharnumber=db.Column(db.String(50))
     age=db.Column(db.Integer)
     gender=db.Column(db.String(50))
     phonenumber=db.Column(db.String(50))
